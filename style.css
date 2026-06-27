@@ -234,49 +234,69 @@ a.card-link[target="_blank"]::after { content: none; }
 /* ===== Grids ===== */
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.35rem; }
 
-.pillar-card {
-    padding: 1.75rem 1.75rem 1.5rem;
-    border-top: 3px solid var(--accent);
+/* ===== Pillar Banners (Expertise) ===== */
+.pillar-banner {
+    display: flex;
+    align-items: stretch;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: all 0.25s;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0.75rem;
 }
-
-.pillar-card h3 {
-    font-size: 1.25rem;
+.pillar-banner:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+    color: inherit;
+}
+.pillar-banner-accent {
+    width: 4px;
+    flex-shrink: 0;
+    background: var(--accent);
+}
+.pillar-banner-content {
+    flex: 1;
+    padding: 1.5rem 1.75rem;
+}
+.pillar-banner-content h3 {
+    font-size: 1.15rem;
     font-weight: 700;
-    margin-bottom: 0.85rem;
     color: var(--accent);
+    margin-bottom: 0.6rem;
     line-height: 1.3;
 }
-
-.pillar-card p {
+.pillar-banner-content p {
     font-size: 0.88rem;
     color: var(--text-secondary);
     line-height: 1.65;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.5rem;
 }
-
-.pillar-card .pillar-pubs {
+.pillar-banner-content p:last-child {
+    margin-bottom: 0;
+}
+.pillar-banner-content .pillar-pubs {
     font-size: 0.78rem;
     color: var(--text-muted);
     font-weight: 500;
-    margin-top: auto;
-    padding-top: 0.5rem;
+    margin-top: 0.25rem;
 }
-
-.pillar-card .pillar-pubs a {
-    font-weight: 600;
-}
-
-.card-arrow {
-    font-size: 0.8rem;
-    color: var(--accent);
-    font-weight: 500;
+.pillar-banner-arrow {
     display: flex;
     align-items: center;
-    gap: 0.3rem;
-    transition: gap 0.2s;
-    margin-top: 0.65rem;
+    padding: 0 1.25rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    transition: color 0.2s, transform 0.2s;
+    flex-shrink: 0;
 }
-.card-link:hover .card-arrow { gap: 0.55rem; }
+.pillar-banner:hover .pillar-banner-arrow {
+    color: var(--accent);
+    transform: translateX(3px);
+}
 
 /* ===== Publication Banners ===== */
 .pub-banner {
