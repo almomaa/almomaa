@@ -3,146 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Academic Portfolio</title>
+    <title>Abd AlRahman Rasheed AlMomani, PhD</title>
+    <meta name="description" content="Causal inference, explainable AI, complex networks, and global optimization. Turning information theory and causality into models that explain, predict, and solve real-world complex-systems problems.">
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for clean academic icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-        <div class="profile-container">
-            <!-- Replace placeholder with your real profile image file later -->
-            <div class="profile-img-placeholder">
-                <i class="fa-solid fa-user-graduation"></i>
-            </div>
-            <h1>Your Name</h1>
-            <p class="title">Assistant Professor & Research Scientist</p>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">A. R. AlMomani</a>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        
-        <nav class="nav-menu">
-            <a href="#about" class="active"><i class="fa-solid fa-address-card"></i> About</a>
-            <a href="#research"><i class="fa-solid fa-microscope"></i> Research</a>
-            <a href="#publications"><i class="fa-solid fa-book-open"></i> Publications</a>
-            <a href="#teaching"><i class="fa-solid fa-chalkboard-user"></i> Teaching & Tools</a>
-            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
-        </nav>
+    </nav>
 
-        <div class="sidebar-footer">
-            <a href="#" target="_blank" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-            <a href="#" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="#" target="_blank" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
-            <a href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-    </aside>
+    <div class="page">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-photo">
+                        <img src="images/photo00.jpg" alt="Abd AlRahman Rasheed AlMomani">
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="hero-name">Abd AlRahman Rasheed AlMomani, PhD</h1>
+                        <p class="hero-sub">Causal Inference &middot; Explainable AI &middot; Complex Networks &middot; Global Optimization<br>Assistant Professor and Program Coordinator of Data Science, Embry-Riddle Aeronautical University</p>
 
-    <!-- Main Content Area -->
-    <main class="content">
+                        <p class="hero-blurb">I build mathematically grounded models that explain <em>why</em> complex systems behave the way they do, using information theory, causality, and optimization to deliver interpretable, robust solutions for real-world and industrial problems. My work bridges federally funded research and hands-on industry engineering.</p>
 
-        <!-- About / Profile Section -->
-        <section id="about" class="section">
-            <h2 class="section-title">Biography</h2>
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu ac hendrerit. Phasellus pellentesque metus in magna feugiat, non convallis diam tristique. Ut sit amet justo id libero dictum elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Research Interests Section -->
-        <section id="research" class="section">
-            <h2 class="section-title">Research Focus</h2>
-            <div class="grid-2">
-                <div class="card item-card">
-                    <div class="item-icon"><i class="fa-solid fa-chart-network"></i></div>
-                    <h3>Core Methodology & Algorithms</h3>
-                    <p>Description of primary theoretical frameworks, algorithm development, or computational methodology being investigated.</p>
-                </div>
-                <div class="card item-card">
-                    <div class="item-icon"><i class="fa-solid fa-gears"></i></div>
-                    <h3>Applied Systems & Simulation</h3>
-                    <p>Description of how theoretical concepts are scaled, simulated, or prototyped into interactive computational environments.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="section">
-            <h2 class="section-title">Selected Publications</h2>
-            <div class="card">
-                <ul class="pub-list">
-                    <li class="pub-item">
-                        <span class="pub-meta">[Journal Name, Year]</span>
-                        <p class="pub-title"><strong>Title of Methodological or Foundational Journal Article</strong></p>
-                        <p class="pub-authors">Author One, Author Two, Author Three</p>
-                        <div class="pub-links">
-                            <a href="#" target="_blank"><i class="fa-solid fa-link"></i> Publisher DOI</a>
-                            <a href="#" target="_blank"><i class="fa-solid fa-file-lines"></i> Preprint</a>
-                            <a href="#" target="_blank"><i class="fa-solid fa-code"></i> Code Repository</a>
+                        <div class="hero-chips">
+                            <span class="chip">PhD, Electrical &amp; Computer Engineering</span>
+                            <span class="chip">AFRL &amp; NSF funded research</span>
+                            <span class="chip">Advisory Member, Root Dynamix</span>
                         </div>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-meta">[Journal Name, Year]</span>
-                        <p class="pub-title"><strong>Title of Applied Research or Analytical Article</strong></p>
-                        <p class="pub-authors">Author One, Author Two</p>
-                        <div class="pub-links">
-                            <a href="#" target="_blank"><i class="fa-solid fa-link"></i> Publisher DOI</a>
-                            <a href="#" target="_blank"><i class="fa-solid fa-code"></i> Code Repository</a>
+
+                        <div class="hero-links">
+                            <a href="expertise.html" class="btn btn-primary">Explore Expertise</a>
+                            <a href="publications.html" class="btn btn-outline">View Publications</a>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Teaching & Software Tools Section -->
-        <section id="teaching" class="section">
-            <h2 class="section-title">Teaching, Tools & Modules</h2>
-            <div class="card">
-                <p>Overview of pedagogical approaches, book blueprints, active curriculum engineering projects, or interactive student simulators.</p>
+        <!-- About -->
+        <section class="section">
+            <div class="container">
                 <div class="grid-2">
-                    <div class="tool-box">
-                        <h4><i class="fa-solid fa-laptop-code"></i> Interactive Code Modules</h4>
-                        <p>Description of open-source interactive modules, simulators, or browser-based tools built for undergraduate education or community engagement.</p>
+                    <div>
+                        <div class="section-header">
+                            <h2 class="section-title">About</h2>
+                        </div>
+                        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.7; margin-bottom:0.85rem;">I solve complex-systems problems with the mathematics that makes models trustworthy. My work draws on information theory, entropy, and causality to build models that are interpretable, identifiable, and robust, even when the data is noisy, sparse, limited, or has missing features.</p>
+                        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.7; margin-bottom:0.85rem;">Two threads run through my work. The first is information-theoretic: geometric and entropy-based frameworks that separate informative signal from noise, uncover causal structure, and recover the governing relationships behind data. The second is optimization: I design global, derivative-free methods (genetic algorithms, particle-swarm optimization, and related metaheuristics) to solve hard industrial decision problems such as production scheduling, resource and power allocation, and system design.</p>
+                        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.7;">I work on both sides of the research-to-practice divide: federally funded and academic research (AFRL, NSF, ONR, ARO) on one hand, and deployed industry engineering on the other, where much of my optimization and systems work shipped as working solutions rather than publications.</p>
                     </div>
-                    <div class="tool-box">
-                        <h4><i class="fa-solid fa-book"></i> Curriculum Integration</h4>
-                        <p>Details on pedagogical integration, combining core science streams with modern computational applications.</p>
+                    <div>
+                        <div class="section-header">
+                            <h2 class="section-title">Education</h2>
+                        </div>
+                        <div class="card">
+                            <div class="edu-list">
+                                <div class="edu-item">
+                                    <span class="edu-degree">PhD</span>
+                                    <div class="edu-details">
+                                        <h4>Clarkson University, NY</h4>
+                                        <p>Electrical &amp; Computer Engineering, 2017–2019</p>
+                                        <p>Research supported by ARO</p>
+                                        <p style="font-style:italic;">Prediction Analysis and System Identification of Complex Systems</p>
+                                    </div>
+                                </div>
+                                <div class="edu-item">
+                                    <span class="edu-degree">MS</span>
+                                    <div class="edu-details">
+                                        <h4>Clarkson University, NY</h4>
+                                        <p>Applied Mathematics, 2015–2017</p>
+                                        <p>Research supported by ONR</p>
+                                        <p style="font-style:italic;">Coherence from Video Data without Trajectories</p>
+                                    </div>
+                                </div>
+                                <div class="edu-item">
+                                    <span class="edu-degree">BS</span>
+                                    <div class="edu-details">
+                                        <h4>Philadelphia University, Jordan</h4>
+                                        <p>Mechatronics Engineering, 2006–2010</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="card contact-card">
-                <p><i class="fa-solid fa-building-columns"></i> <strong>Office:</strong> Department Name, Room XXX<br>University Address</p>
-                <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> professor.email@university.edu</p>
+        <!-- Expertise Preview -->
+        <section class="section" style="padding-bottom:2rem;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Core Expertise</h2>
+                </div>
+                <div class="grid-2">
+                    <a href="expertise/causal-inference.html" class="card-link">
+                        <div class="card pillar-card">
+                            <h3>Causal Inference &amp; Causal Discovery</h3>
+                            <p>Recovering the actual causal structure behind data so decisions rest on what truly drives a system, not on coincidence. Entropic regression overcomes the outlier and noise problems that defeat conventional system identification.</p>
+                            <span class="card-arrow">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="expertise/explainability.html" class="card-link">
+                        <div class="card pillar-card">
+                            <h3>Explainable &amp; Interpretable ML / AI</h3>
+                            <p>Making models interpretable by grounding them in information theory rather than black-box heuristics. Sparse, human-readable models whose terms map to real mechanisms.</p>
+                            <span class="card-arrow">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="expertise/complex-networks.html" class="card-link">
+                        <div class="card pillar-card">
+                            <h3>Complex Networks &amp; Systems</h3>
+                            <p>Mapping how influence and information flow through networked systems, detecting tipping points, and finding the essential structure that holds coupled systems together.</p>
+                            <span class="card-arrow">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="expertise/global-optimization.html" class="card-link">
+                        <div class="card pillar-card">
+                            <h3>Global Optimization for Industrial Problems</h3>
+                            <p>Genetic algorithms, particle-swarm optimization, and metaheuristics for production scheduling, resource allocation, logistics, and network design. Grounded in years of deployed industry engineering.</p>
+                            <span class="card-arrow">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
-    </main>
-
-    <!-- Simple sticky script to keep nav highlights accurate -->
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    const id = entry.target.getAttribute('id');
-                    if (entry.intersectionRatio > 0.5) {
-                        document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
-                        document.querySelector(`.nav-menu a[href="#${id}"]`).classList.add('active');
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            document.querySelectorAll('section[id]').forEach((section) => {
-                observer.observe(section);
-            });
-        });
-    </script>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/almomaniar/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/almomaa" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <p>&copy; 2025 Abd AlRahman R. AlMomani. Last updated June 2026.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
