@@ -142,10 +142,8 @@ a.card-link[target="_blank"]::after { content: none; }
 }
 
 .hero-arabic {
-    width: 240px;
-    opacity: 0.3;
+    width: 320px;
     margin-bottom: 0.85rem;
-    filter: var(--arabic-filter, none);
 }
 
 .hero-sub {
