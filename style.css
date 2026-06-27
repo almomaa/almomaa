@@ -141,6 +141,13 @@ a.card-link[target="_blank"]::after { content: none; }
     margin-bottom: 0.4rem;
 }
 
+.hero-arabic {
+    width: 240px;
+    opacity: 0.3;
+    margin-bottom: 0.85rem;
+    filter: var(--arabic-filter, none);
+}
+
 .hero-sub {
     font-size: 0.88rem;
     color: var(--accent);
@@ -596,6 +603,7 @@ a.card-link[target="_blank"]::after { content: none; }
     .hero-layout { flex-direction: column; align-items: center; text-align: center; gap: 1.25rem; }
     .hero-photo img { width: 140px; height: 140px; }
     .hero-name { font-size: 1.55rem; }
+    .hero-arabic { margin-left: auto; margin-right: auto; }
     .hero-chips { justify-content: center; }
     .hero-links { justify-content: center; }
     .container { padding: 0 1.25rem; }
