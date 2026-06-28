@@ -15,9 +15,9 @@
 
 ### 👋 About me
 
-I am an Assistant Professor of Data Science & Mathematics and Program Coordinator of Data Science at **Embry-Riddle Aeronautical University**, and an Advisory Member at **Root Dynamix, LLC**. I work at the intersection of applied mathematics, data science, and engineering, building models that are interpretable, identifiable, and robust, even when the data is noisy, sparse, or limited.
+I am an Assistant Professor of Data Science & Mathematics and Program Coordinator of Data Science at **Embry-Riddle Aeronautical University**. I work at the intersection of applied mathematics, data science, and engineering, building models that are interpretable, identifiable, and robust, even when the data is noisy, sparse, or limited.
 
-My work bridges federally funded research (AFRL, NSF, ONR, ARO) and hands-on industry engineering, where much of my optimization and systems work shipped as working solutions rather than publications.
+My work bridges federally funded research and hands-on industry engineering, where much of my optimization and systems work shipped as working solutions rather than publications.
 
 ### 🔬 What I work on
 
@@ -31,12 +31,12 @@ My work bridges federally funded research (AFRL, NSF, ONR, ARO) and hands-on ind
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white)
 ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
-![C++](https://img.shields.io/badge/C/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+
 
 ### 📌 Featured work
 
-- **[ERFit](https://github.com/almomaa)** — Entropic Regression toolkit (MATLAB & Python) for robust nonlinear system identification
-- Read the research behind it: *How Entropic Regression Beats the Outliers Problem in Nonlinear System Identification* (Chaos, Editor's Pick)
+- **[ERFit](https://github.com/almomaa/ERFit-Package)** — Entropic Regression toolkit (MATLAB & Python) for robust nonlinear system identification
+- Read the research behind it: *How Entropic Regression Beats the Outliers Problem in Nonlinear System Identification* (Chaos)
 
 ### 📫 Reach me
 
