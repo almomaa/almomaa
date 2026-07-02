@@ -50,12 +50,13 @@
       ]
     }
     </script>
+    <script>(function(){try{var t=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();function toggleTheme(){var d=document.documentElement,n=d.getAttribute("data-theme")==="dark"?"light":"dark";d.setAttribute("data-theme",n);try{localStorage.setItem("theme",n);}catch(e){}var i=document.querySelector(".theme-toggle i");if(i)i.className=n==="dark"?"fa-solid fa-sun":"fa-solid fa-moon";}document.addEventListener("DOMContentLoaded",function(){var t=document.documentElement.getAttribute("data-theme");var i=document.querySelector(".theme-toggle i");if(i)i.className=t==="dark"?"fa-solid fa-sun":"fa-solid fa-moon";});</script>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-inner">
             <a href="index.html" class="nav-brand">A. R. AlMomani</a>
-            <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="document.querySelector('.nav-links').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button>
+            <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button><button class="nav-toggle" aria-label="Toggle navigation menu" onclick="document.querySelector('.nav-links').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="expertise.html">Expertise</a></li>
@@ -152,6 +153,7 @@
                     <h2 class="section-title">Core Expertise</h2>
                 </div>
                 <a href="expertise/causal-inference.html" class="pillar-banner">
+                    <div class="pillar-icon"><i class="fa-solid fa-diagram-project"></i></div>
                     <div class="pillar-banner-content">
                         <h3>Causal Inference &amp; Structure Discovery</h3>
                         <p>Recovering the true drivers behind data, not just correlations.</p>
@@ -159,6 +161,7 @@
                     <i class="fa-solid fa-chevron-right pillar-banner-arrow"></i>
                 </a>
                 <a href="expertise/explainability.html" class="pillar-banner">
+                    <div class="pillar-icon"><i class="fa-solid fa-lightbulb"></i></div>
                     <div class="pillar-banner-content">
                         <h3>Explainable &amp; Interpretable ML / AI</h3>
                         <p>Making machine-learning models transparent, identifiable, and trustworthy.</p>
@@ -166,6 +169,7 @@
                     <i class="fa-solid fa-chevron-right pillar-banner-arrow"></i>
                 </a>
                 <a href="expertise/complex-networks.html" class="pillar-banner">
+                    <div class="pillar-icon"><i class="fa-solid fa-share-nodes"></i></div>
                     <div class="pillar-banner-content">
                         <h3>Complex Networks &amp; Systems</h3>
                         <p>Mapping influence, risk, and early-warning signals across connected systems.</p>
@@ -173,6 +177,7 @@
                     <i class="fa-solid fa-chevron-right pillar-banner-arrow"></i>
                 </a>
                 <a href="expertise/global-optimization.html" class="pillar-banner">
+                    <div class="pillar-icon"><i class="fa-solid fa-arrows-to-dot"></i></div>
                     <div class="pillar-banner-content">
                         <h3>Global Optimization for Industrial Problems</h3>
                         <p>Genetic algorithms and metaheuristics for hard industrial decision problems.</p>
