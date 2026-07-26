@@ -25,7 +25,7 @@
     <script>(function(){try{var t=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();function toggleTheme(){var d=document.documentElement,n=d.getAttribute("data-theme")==="dark"?"light":"dark";d.setAttribute("data-theme",n);try{localStorage.setItem("theme",n);}catch(e){}var i=document.querySelector(".theme-toggle i");if(i)i.className=n==="dark"?"fa-solid fa-sun":"fa-solid fa-moon";}document.addEventListener("DOMContentLoaded",function(){var t=document.documentElement.getAttribute("data-theme");var i=document.querySelector(".theme-toggle i");if(i)i.className=t==="dark"?"fa-solid fa-sun":"fa-solid fa-moon";});</script>
 </head>
 <body>
-    <nav class="navbar"><div class="nav-inner"><a href="../index.html" class="nav-brand">A. R. AlMomani</a><button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button><button class="nav-toggle" aria-label="Toggle navigation menu" onclick="document.querySelector('.nav-links').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../expertise.html">Expertise</a></li><li><a href="../experience.html">Experience</a></li><li><a href="../teaching.html">Teaching</a></li><li><a href="../publications.html" class="active">Publications</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
+    <nav class="navbar"><div class="nav-inner"><a href="../index.html" class="nav-brand">A. R. AlMomani</a><button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button><button class="nav-toggle" aria-label="Toggle navigation menu" onclick="document.querySelector('.nav-links').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../expertise.html">Research</a></li><li><a href="../experience.html">Experience</a></li><li><a href="../teaching.html">Teaching</a></li><li><a href="../publications.html" class="active">Publications</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
     <div class="page"><section class="detail-page"><div class="container">
         <a href="../publications.html" class="detail-back"><i class="fa-solid fa-arrow-left"></i> Back to Publications</a>
         <div class="detail-header">
@@ -40,8 +40,8 @@
         <div class="detail-body">
             <p><strong>Authors:</strong> C. Tyler Diggans and <strong>A. R. AlMomani</strong></p>
             <p>Introduces Boltzmann-Shannon Interaction Entropy (BSIE), a normalized entropy measure for continuous random variables that captures the interaction between geometric and probabilistic structure. Unlike classical entropy measures, BSIE is bounded and interpretable. A key application is as a subsample quality metric, a principled way to assess whether a data subset preserves the statistical structure of the full dataset.</p>
-            <h2>Related Expertise</h2>
-            <p><a href="../expertise/explainability.html">Explainable &amp; Interpretable ML / AI</a> (Pillar 2)</p>
+            <h2>Related Research</h2>
+            <p><a href="../expertise.html#program-1">Geometric Information Theory</a></p>
             <div class="detail-links">
                 <a href="https://doi.org/10.1063/5.0182349" target="_blank" class="btn btn-primary"><i class="fa-solid fa-lock-open"></i> Open Access (DOI)</a>
             </div>
