@@ -178,13 +178,13 @@ a.card-link[target="_blank"]::after { content: none; }
 .hero-layout {
     display: flex;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 3.25rem;
 }
 
 .hero-photo { flex-shrink: 0; }
 .hero-photo img {
-    width: 180px;
-    height: 180px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--bg-alt);
@@ -199,7 +199,7 @@ a.card-link[target="_blank"]::after { content: none; }
     line-height: 1.12;
     letter-spacing: -0.03em;
     color: var(--text);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.65rem;
 }
 
 .hero-arabic {
@@ -208,12 +208,12 @@ a.card-link[target="_blank"]::after { content: none; }
 }
 
 .hero-identity {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     color: var(--accent);
     font-weight: 600;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.025em;
     line-height: 1.4;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.45rem;
 }
 
 .hero-sub {
@@ -222,22 +222,32 @@ a.card-link[target="_blank"]::after { content: none; }
     font-weight: 500;
     letter-spacing: 0.01em;
     line-height: 1.5;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.35rem;
+}
+
+.hero-statement {
+    max-width: 650px;
+    font-size: 1.55rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 0.75rem;
 }
 
 .hero-blurb {
-    font-size: 1rem;
+    font-size: 0.98rem;
     color: var(--text-secondary);
     line-height: 1.65;
-    margin-bottom: 1.25rem;
-    max-width: 580px;
+    margin-bottom: 1.35rem;
+    max-width: 660px;
 }
 
 .hero-chips {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    margin-top: 1.25rem;
 }
 
 .chip {
@@ -869,8 +879,9 @@ a.anchor-chip:hover {
 
 @media (max-width: 700px) {
     .hero-layout { flex-direction: column; align-items: center; text-align: center; gap: 1.25rem; }
-    .hero-photo img { width: 140px; height: 140px; }
+    .hero-photo img { width: 155px; height: 155px; }
     .hero-name { font-size: 1.9rem; }
+    .hero-statement { font-size: 1.3rem; }
     .hero-arabic { margin-left: auto; margin-right: auto; }
     .hero-chips { justify-content: center; }
     .hero-links { justify-content: center; }
