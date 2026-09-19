@@ -606,6 +606,7 @@ a.anchor-chip:hover {
 .pub-badge-pick { color: var(--accent-warm); background: rgba(154,108,59,0.1); }
 .pub-badge-oa { color: #2a7a3a; background: rgba(42,122,58,0.08); }
 .pub-badge-news { color: #8a3a8a; background: rgba(138,58,138,0.08); }
+.pub-badge-code { color: var(--text-secondary); background: var(--accent-light); }
 
 /* ===== Publication Filter ===== */
 .pub-filter {
@@ -646,6 +647,7 @@ a.anchor-chip:hover {
 .pub-type-conference { color: #2a7a3a; background: rgba(42,122,58,0.1); }
 .pub-type-mentee { color: #8a3a8a; background: rgba(138,58,138,0.1); }
 .pub-type-talk { color: var(--accent-warm); background: rgba(154,108,59,0.12); }
+.pub-type-preprint { color: var(--accent-warm); background: rgba(154,108,59,0.12); }
 
 /* ===== Experience Timeline ===== */
 .timeline {
