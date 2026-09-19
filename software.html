@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software | A. R. AlMomani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://almomaniar.com/software.html">
+    <meta name="description" content="Open-source Python packages and MATLAB toolboxes by Dr. A. R. AlMomani: entropy-spine (SPINE), GRNLab, Boltzmann-Shannon Index, and ERFit.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Abd AlRahman R. AlMomani, PhD">
+    <meta property="og:url" content="https://almomaniar.com/software.html">
+    <meta property="og:title" content="Software | A. R. AlMomani">
+    <meta property="og:description" content="Open-source Python packages and MATLAB toolboxes by Dr. A. R. AlMomani: entropy-spine (SPINE), GRNLab, Boltzmann-Shannon Index, and ERFit.">
+    <meta property="og:image" content="https://almomaniar.com/images/photo00.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Software | A. R. AlMomani">
+    <meta name="twitter:description" content="Open-source Python packages and MATLAB toolboxes by Dr. A. R. AlMomani: entropy-spine (SPINE), GRNLab, Boltzmann-Shannon Index, and ERFit.">
+    <meta name="twitter:image" content="https://almomaniar.com/images/photo00.jpg">
+    <script>(function(){try{var t=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();function toggleTheme(){var d=document.documentElement,n=d.getAttribute("data-theme")==="dark"?"light":"dark";d.setAttribute("data-theme",n);try{localStorage.setItem("theme",n);}catch(e){}var i=document.querySelector(".theme-toggle i");if(i)i.className=n==="dark"?"fa-solid fa-sun":"fa-solid fa-moon";}document.addEventListener("DOMContentLoaded",function(){var t=document.documentElement.getAttribute("data-theme");var i=document.querySelector(".theme-toggle i");if(i)i.className=t==="dark"?"fa-solid fa-sun":"fa-solid fa-moon";});</script>
+</head>
+<body>
+    <nav class="navbar"><div class="nav-inner"><a href="index.html" class="nav-brand">A. R. AlMomani</a><button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button><button class="nav-toggle" aria-label="Toggle navigation menu" onclick="document.querySelector('.nav-links').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="expertise.html">Research</a></li><li><a href="experience.html">Experience</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="publications.html">Publications</a></li><li><a href="software.html" class="active">Software</a></li><li><a href="contact.html">Contact</a></li></ul></div></nav>
+
+    <div class="page">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Software</h2>
+                </div>
+                <p class="sw-intro">Open-source implementations of the methods in my papers. Each package ships with documentation and tests, and the Python and MATLAB versions share the same functions, options, and conventions so results can be reproduced in either environment.</p>
+
+                <h3 class="sw-sub"><i class="fa-brands fa-python"></i> Python packages on PyPI</h3>
+                <div class="sw-grid">
+                    <div class="sw-card" data-pypi="entropy-spine" data-gh="almomaa/entropy-spine">
+                        <div class="sw-head">
+                            <div class="sw-name">SPINE<small>entropy-spine</small></div>
+                            <div class="sw-tags"><span class="sw-tag">Python</span><span class="sw-tag sw-tag-matlab">MATLAB</span><span class="sw-tag sw-tag-mit">MIT</span></div>
+                        </div>
+                        <div class="sw-hook">Scale Partitioning by Incremental Nested Entropy</div>
+                        <p>Cuts a nonnegative measure into scale strata with no threshold to tune and no group count to declare. Given a spectrum, a set of weights, or any distribution of magnitudes, SPINE finds where one scale ends and the next begins. The Python package and the MATLAB reference implementation share the same interface.</p>
+                        <div class="sw-install"><code>pip install entropy-spine</code><button class="sw-copy" type="button" aria-label="Copy install command" onclick="copyInstall(this)"><i class="fa-regular fa-copy"></i></button></div>
+                        <div class="sw-stats" aria-live="polite">
+                            <span class="sw-stat-ver" hidden><i class="fa-solid fa-tag"></i><b></b></span>
+                            <span class="sw-stat-rel" hidden><i class="fa-solid fa-box-open"></i><b></b></span>
+                            <span class="sw-stat-stars" hidden><i class="fa-solid fa-star"></i><b></b></span>
+                            <span class="sw-stat-push" hidden><i class="fa-solid fa-code-commit"></i><b></b></span>
+                        </div>
+                        <div class="sw-links"><a href="https://pypi.org/project/entropy-spine/" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-brands fa-python"></i>PyPI</a><a href="https://github.com/almomaa/entropy-spine" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a><a href="https://almomaa.github.io/entropy-spine/" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i>Documentation</a><a href="https://arxiv.org/abs/2608.17391" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i>Paper (arXiv:2608.17391)</a></div>
+                    </div>
+
+                    <div class="sw-card" data-pypi="grnlab" data-gh="almomaa/GRNLab">
+                        <div class="sw-head">
+                            <div class="sw-name">GRNLab<small>grnlab</small></div>
+                            <div class="sw-tags"><span class="sw-tag">Python</span><span class="sw-tag sw-tag-matlab">MATLAB</span><span class="sw-tag sw-tag-mit">MIT</span></div>
+                        </div>
+                        <div class="sw-hook">Gene regulatory network data with the ground truth attached</div>
+                        <p>A data generator for gene regulatory networks with Hill-function kinetics. Every dataset comes with the signed regulatory network, every kinetic parameter, the initial conditions, the seeds, and the solver settings that produced it, so causal discovery and network inference methods can be scored against a known answer. Available as a Python package and a MATLAB toolbox.</p>
+                        <div class="sw-install"><code>pip install grnlab</code><button class="sw-copy" type="button" aria-label="Copy install command" onclick="copyInstall(this)"><i class="fa-regular fa-copy"></i></button></div>
+                        <div class="sw-stats" aria-live="polite">
+                            <span class="sw-stat-ver" hidden><i class="fa-solid fa-tag"></i><b></b></span>
+                            <span class="sw-stat-rel" hidden><i class="fa-solid fa-box-open"></i><b></b></span>
+                            <span class="sw-stat-stars" hidden><i class="fa-solid fa-star"></i><b></b></span>
+                            <span class="sw-stat-push" hidden><i class="fa-solid fa-code-commit"></i><b></b></span>
+                        </div>
+                        <div class="sw-links"><a href="https://pypi.org/project/grnlab/" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-brands fa-python"></i>PyPI</a><a href="https://github.com/almomaa/GRNLab" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a><a href="https://almomaa.github.io/GRNLab/" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i>Documentation</a></div>
+                    </div>
+
+                </div>
+
+                <h3 class="sw-sub"><i class="fa-solid fa-code"></i> More code</h3>
+                <div class="sw-grid">
+                    <div class="sw-card" data-gh="almomaa/Boltzmann_Shannon_Index">
+                        <div class="sw-head">
+                            <div class="sw-name">Boltzmann-Shannon Index</div>
+                            <div class="sw-tags"><span class="sw-tag">Python</span><span class="sw-tag sw-tag-matlab">MATLAB</span><span class="sw-tag sw-tag-mit">MIT</span></div>
+                        </div>
+                        <div class="sw-hook">A geometry-aware measure of clustering balance</div>
+                        <p>Scores a clustering by comparing the frequency-based distribution of cluster sizes with a volume-based distribution from each cluster's geometry, using the Jensen-Shannon divergence. Higher is better. Dimension-agnostic and robust to imbalanced clusters. Single-file Python and MATLAB implementations.</p>
+                        <div class="sw-stats" aria-live="polite">
+                            <span class="sw-stat-stars" hidden><i class="fa-solid fa-star"></i><b></b></span>
+                            <span class="sw-stat-push" hidden><i class="fa-solid fa-code-commit"></i><b></b></span>
+                        </div>
+                        <div class="sw-links"><a href="https://github.com/almomaa/Boltzmann_Shannon_Index" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a><a href="https://arxiv.org/abs/2512.02397" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i>Paper (arXiv:2512.02397)</a></div>
+                    </div>
+
+                    <div class="sw-card" data-gh="almomaa/ERFit-Package">
+                        <div class="sw-head">
+                            <div class="sw-name">ERFit</div>
+                            <div class="sw-tags"><span class="sw-tag sw-tag-matlab">MATLAB</span></div>
+                        </div>
+                        <div class="sw-hook">Entropic Regression for nonlinear system identification</div>
+                        <p>Recovers the governing equations of a dynamical system from data by selecting terms with an information-theoretic criterion rather than a sparsity penalty, which makes it robust to noise and to outliers. The toolbox behind the Editor's Pick paper in <em>Chaos</em>.</p>
+                        <div class="sw-stats" aria-live="polite">
+                            <span class="sw-stat-stars" hidden><i class="fa-solid fa-star"></i><b></b></span>
+                            <span class="sw-stat-push" hidden><i class="fa-solid fa-code-commit"></i><b></b></span>
+                        </div>
+                        <div class="sw-links"><a href="https://github.com/almomaa/ERFit-Package" class="anchor-chip" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a><a href="publications/entropic-regression-outliers.html" class="anchor-chip"><i class="fa-solid fa-file-lines"></i>Paper</a></div>
+                    </div>
+
+                    <div class="sw-card sw-card-soon">
+                        <div class="sw-head">
+                            <div class="sw-name">Complex Networks &amp; Synchronization</div>
+                            <div class="sw-tags"><span class="sw-tag">Python</span><span class="sw-tag sw-tag-matlab">MATLAB</span><span class="sw-tag sw-tag-soon">In development</span></div>
+                        </div>
+                        <div class="sw-hook">Release planned for February 2027</div>
+                        <p>A Python package and MATLAB toolbox for building, analyzing, and synchronizing complex networks, including the essential synchronization backbone and information-theoretic dependency measures from my network papers.</p>
+                        <div class="sw-links"><a href="publications/synchronization-backbone.html" class="anchor-chip"><i class="fa-solid fa-file-lines"></i>Related paper</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script>
+        function copyInstall(btn){
+          var code=btn.parentNode.querySelector("code").textContent;
+          function done(){btn.innerHTML='<i class="fa-solid fa-check"></i>';setTimeout(function(){btn.innerHTML='<i class="fa-regular fa-copy"></i>';},1500);}
+          function legacy(){var ta=document.createElement("textarea");ta.value=code;ta.setAttribute("readonly","");ta.style.position="absolute";ta.style.left="-9999px";document.body.appendChild(ta);ta.select();try{if(document.execCommand("copy"))done();}catch(e){}document.body.removeChild(ta);}
+          if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(code).then(done,legacy);}else{legacy();}
+        }
+        document.addEventListener("DOMContentLoaded",function(){
+          function set(card,sel,val){var e=card.querySelector(sel);if(e&&val){e.querySelector("b").textContent=val;e.hidden=false;}}
+          function pl(n,u){n=Math.max(1,Math.round(n));return n+" "+u+(n===1?"":"s")+" ago";}function ago(iso){var d=(Date.now()-new Date(iso).getTime())/864e5;if(d<1)return "today";if(d<30)return pl(d,"day");if(d<365)return pl(d/30,"month");return pl(d/365,"year");}
+          [].forEach.call(document.querySelectorAll("[data-pypi]"),function(c){
+            fetch("https://pypi.org/pypi/"+c.getAttribute("data-pypi")+"/json").then(function(r){return r.json();}).then(function(d){
+              var v=d.info&&d.info.version;if(!v)return;set(c,".sw-stat-ver","v"+v);
+              var rel=d.releases&&d.releases[v];if(rel&&rel.length&&rel[0].upload_time_iso_8601)set(c,".sw-stat-rel","released "+ago(rel[0].upload_time_iso_8601));
+            }).catch(function(){});
+          });
+          [].forEach.call(document.querySelectorAll("[data-gh]"),function(c){
+            fetch("https://api.github.com/repos/"+c.getAttribute("data-gh")).then(function(r){return r.ok?r.json():null;}).then(function(d){
+              if(!d)return;if(d.stargazers_count>0)set(c,".sw-stat-stars",d.stargazers_count+(d.stargazers_count===1?" star":" stars"));
+              if(d.pushed_at)set(c,".sw-stat-push","updated "+ago(d.pushed_at));
+            }).catch(function(){});
+          });
+        });
+        </script>
+
+        <footer class="footer"><div class="container"><div class="footer-links"><a href="https://scholar.google.com/citations?user=OQto44cAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a><a href="https://orcid.org/0000-0001-9362-7459" target="_blank" title="ORCID"><i class="fa-brands fa-orcid"></i></a><a href="https://www.linkedin.com/in/almomaniar/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a><a href="https://github.com/almomaa" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a></div><p>&copy; 2026 Abd AlRahman R. AlMomani. Last updated September 2026.</p></div></footer>
+    </div>
+</body>
+</html>
